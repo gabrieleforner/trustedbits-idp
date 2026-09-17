@@ -1,0 +1,14 @@
+.idea
+.vscode
+
+.env
+.claude
+CLAUDE.md
+
+
+bin/
+obj/
+*/Properties/launchSettings.json
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
