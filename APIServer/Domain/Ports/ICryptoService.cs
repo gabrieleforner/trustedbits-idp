@@ -23,5 +23,5 @@ public interface ICryptoService<T> where T : SecretBase
     /// <param name="cipherSecret"><c>T</c> instance with KEK/DEK and secret value encrypted</param>
     /// <param name="cancellation">Cancellation token</param>
     /// <returns><c>T</c> instance with KEK/DEK zeroed and the secret(s) in plaintext</returns>
-    Task<T> DecryptAsync(T cipherSecret, CancellationToken cancellation = default);
+    Task<byte[]> DecryptAsync(T cipherSecret, CancellationToken cancellation = default);
 }
